@@ -1,0 +1,29 @@
+<!-- // let name ="Dana"
+// console.log(`Welcome ${name} TO API's development camp`); // this way called template literals back text
+
+// ////////////////////////// example 2 ////////////////////////// -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button  id="button">Click Me!</button>
+    <script>
+        const buttonClicled = (num)=>{
+            setTimeout(()=>console.log(num), num*1000);
+        }
+        const onButtonClick = (e)=>{
+            for(i =0; i<=10;i++){
+                buttonClicled(i);
+            }
+        }
+        const button = document.getElementById("button");
+        button.addEventListener('click', onButtonClick);
+    </script>
+    
+</body>
+</html>
